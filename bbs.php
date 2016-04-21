@@ -6,11 +6,24 @@
   // $user = 'root';
   // $password= '';
 
-  $dsn = 'mysql:dbname=LAA0731739-onelinebbs;host=mysql110.phy.lolipop.lan';
-  $user = 'LAA0731739';
-  $password= 'M1kunohe';
-  $dbh = new PDO($dsn,$user,$password);
-  $dbh ->query('SET NAMES utf8');
+  // $dsn = 'mysql:dbname=LAA0731739-onelinebbs;host=mysql110.phy.lolipop.lan';
+  // $user = 'LAA0731739';
+  // $password= 'M1kunohe';
+  // $dbh = new PDO($dsn,$user,$password);
+  // $dbh ->query('SET NAMES utf8');
+
+  require('dbconnect.php');
+
+  //削除ボタンが押された時の処理
+  if (isset($_GET['action'])&&($_GET['action']=='delete')){
+  //&&は”かつ”
+  $deletesql = sprintf('DELETE FROM `posts` WHERE `id`=%s',$_GET['id']);
+  
+
+  //DELETE文実行
+  $stmt = $dbh->prepare($deletesql);
+  $stmt->execute();
+  }
 
 
   //POST送信がおこなわれたら、下記の処理を実行
@@ -109,12 +122,6 @@
       <!-- /.container-fluid -->
   </nav>
 
-  <figure class="relative">
-  <img src="image02.jpg" width="100%" height="75%">
-  <figcaption class="ablosute">
-  <p>ここに文字を入れる</p></figcaption>
-  </figure>>
-
   <div class="container">
     <div class="row">
       <div class="col-md-4 content-margin-top">
@@ -159,8 +166,26 @@
                   </div>
 
                   <div class="timeline-label"> 
-                   <h2><a href="#"><?php echo $post_each['nickname']; ?></a> <span><?php echo $post_each['created']; ?></span></h2>
+                   <h2><a href="#"><?php echo $post_each['nickname']; ?></a>
+
+                    <?php
+                    //一旦日時型に変換（String型からDatetime型へ変換）
+                    $created = strtotime($post_each['created']);
+
+                    //書式を変換
+                    $created = date('Y年m月d日　H時i分s秒',$created);
+
+                    ?>
+
+
+                    <!-- <span><?php //echo $post_each['created']; ?></span> -->
+                    <span><?php echo $created; ?></span> 
+
+
+                    </h2>
                     <p><?php echo $post_each['comment']; ?></p>
+                    <a onclick="return confirm('本当に削除しますか？')" href="bbs.php?action=delete&id=<?php echo $post_each['id']; ?>" style="position: absolute;right:10px;bottom:10px"><i class="fa fa-trash fa-lg"></i></a>
+        
                   </div>
               </div>
 
