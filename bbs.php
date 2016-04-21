@@ -64,7 +64,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>セブ掲示版</title>
+  <title>セブ英語間違い掲示版</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -85,7 +85,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#page-top"><span class="strong-title"><i class="fa fa-bookmark"></i> Oneline bbs</span></a>
+              <a class="navbar-brand" href="#page-top"><span class="strong-title"><i class="fa fa-bookmark"></i> 今日間違えた英語をさらす掲示板</span></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -131,7 +131,7 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary col-xs-12" disabled>つぶやく</button>
+          <button type="submit" class="btn btn-primary col-xs-12" disabled>恥をさらす</button>
         </form>
       </div>
 
