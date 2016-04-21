@@ -85,7 +85,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#page-top"><span class="strong-title"><i class="fa fa-bookmark"></i> 今日間違えた英語をさらす掲示板</span></a>
+              <a class="navbar-brand" href="#page-top"><span class="strong-title"><i class="fa fa-bookmark"></i> 間違い英語葬儀掲示板</span></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -109,6 +109,12 @@
       <!-- /.container-fluid -->
   </nav>
 
+  <figure class="relative">
+  <img src="image02.jpg" width="100%" height="75%">
+  <figcaption class="ablosute">
+  <p>ここに文字を入れる</p></figcaption>
+  </figure>>
+
   <div class="container">
     <div class="row">
       <div class="col-md-4 content-margin-top">
@@ -116,7 +122,7 @@
           <div class="form-group">
             <div class="input-group">
               <input type="text" name="nickname" class="form-control"
-                       id="validate-text" placeholder="今日の恥は今日のうちに！nicknameをお願いします。" required>
+                       id="validate-text" placeholder="間違いの成仏にnicknameをお願いします。" required>
 
               <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
             </div>
@@ -131,7 +137,7 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary col-xs-12" disabled>恥をさらす</button>
+          <button type="submit" class="btn btn-primary col-xs-12" disabled>供養</button>
         </form>
       </div>
 
