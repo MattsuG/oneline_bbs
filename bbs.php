@@ -149,7 +149,7 @@
 
                   <div class="timeline-icon bg-success">
                       <i class="entypo-feather"></i>
-                      <i class="fa fa-cogs"></i>
+                      <i class="fa fa-pencil"></i>
                   </div>
 
                   <div class="timeline-label"> 
