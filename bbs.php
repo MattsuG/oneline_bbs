@@ -116,7 +116,7 @@
           <div class="form-group">
             <div class="input-group">
               <input type="text" name="nickname" class="form-control"
-                       id="validate-text" placeholder="nickname" required>
+                       id="validate-text" placeholder="今日の恥は今日のうちに！nicknameをお願いします。" required>
 
               <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
             </div>
@@ -125,7 +125,7 @@
 
           <div class="form-group">
             <div class="input-group" data-validate="length" data-length="4">
-              <textarea type="text" class="form-control" name="comment" id="validate-length" placeholder="comment" required></textarea>
+              <textarea type="text" class="form-control" name="comment" id="validate-length" placeholder="間違い:brabrabra. 正しくは:brabrabra" required></textarea>
               <!--inputもtextareaもformに囲われてればpost送信上もんだいない-->
               <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
             </div>
