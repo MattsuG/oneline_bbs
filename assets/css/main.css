@@ -1,5 +1,8 @@
 body {
   margin-top: 20px;
+  background-image: url("image03.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .content-margin-top {
@@ -9,4 +12,23 @@ body {
 .strong-title {
   font-size: 30px;
   font-weight: 800;
+}
+
+
+
+.relative {
+    position: relative;
+}
+
+
+.delete{
+  position: absolute;
+  right:10px;
+  bottom:10px;
+}
+
+.like{
+  position: absolute;
+  left:10px;
+  bottom:10px;
 }
